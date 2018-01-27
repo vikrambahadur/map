@@ -15,8 +15,8 @@ public class SalesMessageServer {
 	SalesMessageService messageService = new SalesMessageService();
 	
 	@WebMethod
-	public void sendMessage(String message) {
-		messageService.execute(message);
+	public int sendMessage(String message) {
+		return messageService.execute(message);
 		
 	}
 }
